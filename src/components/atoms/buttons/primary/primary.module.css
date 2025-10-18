@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-height: 2.5rem;
+    padding: 5px 15px;
+    color: black;
+    background-color: burlywood;
+    border: 1px solid lightslategray;
+    border-radius: 1.5rem;
+    transition: background-color 0.2s ease-out;
+}

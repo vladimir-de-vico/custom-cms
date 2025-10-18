@@ -1,10 +1,8 @@
-import { Button, ButtonLink, ButtonToggle } from '@/components/atoms/buttons/button';
+import { ButtonLink } from '@/components/atoms/buttons/button';
 
 export default function Page() {
     return (
         <>
-            <Button variant='primary'>Button Primary</Button>
-            <ButtonToggle variant='primary'>ButtonToggle Primary</ButtonToggle>
             <ButtonLink
                 href={'/'}
                 variant='primary'
