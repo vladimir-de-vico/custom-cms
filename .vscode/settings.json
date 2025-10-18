@@ -9,5 +9,7 @@
         "source.removeUnusedImports": "explicit"
     },
     "editor.defaultFormatter": "biomejs.biome",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "scm.compactFolders": false,
+    "scm.countBadge": "all"
 }
