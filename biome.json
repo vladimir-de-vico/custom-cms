@@ -1,37 +1,72 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
-  "vcs": {
-    "enabled": true,
-    "clientKind": "git",
-    "useIgnoreFile": true
-  },
-  "files": {
-    "ignoreUnknown": true,
-    "includes": ["**", "!node_modules", "!.next", "!dist", "!build"]
-  },
-  "formatter": {
-    "enabled": true,
-    "indentStyle": "space",
-    "indentWidth": 2
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true,
-      "suspicious": {
-        "noUnknownAtRules": "off"
-      }
+    "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
+    "assist": {
+        "actions": {
+            "source": {
+                "organizeImports": "on",
+                "useSortedAttributes": "on",
+                "useSortedKeys": "on",
+                "useSortedProperties": "on"
+            }
+        }
     },
-    "domains": {
-      "next": "recommended",
-      "react": "recommended"
+    "files": {
+        "ignoreUnknown": false,
+        "includes": ["**", "!node_modules", "!.next", "!dist", "!build"]
+    },
+    "formatter": {
+        "attributePosition": "auto",
+        "bracketSameLine": false,
+        "bracketSpacing": true,
+        "enabled": true,
+        "expand": "auto",
+        "formatWithErrors": false,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineEnding": "lf",
+        "lineWidth": 120,
+        "useEditorconfig": false
+    },
+    "javascript": {
+        "formatter": {
+            "attributePosition": "multiline",
+            "bracketSameLine": false,
+            "bracketSpacing": true,
+            "jsxQuoteStyle": "single",
+            "lineEnding": "lf",
+            "quoteStyle": "single",
+            "semicolons": "always",
+            "trailingCommas": "all"
+        }
+    },
+    "json": {
+        "formatter": {
+            "indentStyle": "space",
+            "indentWidth": 4
+        }
+    },
+    "linter": {
+        "domains": {
+            "next": "recommended",
+            "react": "recommended"
+        },
+        "enabled": true,
+        "rules": {
+            "a11y": {
+                "recommended": true
+            },
+            "recommended": true,
+            "suspicious": {
+                "noImplicitAnyLet": "off",
+                "noShadowRestrictedNames": "off",
+                "noUnknownAtRules": "off"
+            }
+        }
+    },
+    "vcs": {
+        "clientKind": "git",
+        "defaultBranch": "main",
+        "enabled": true,
+        "useIgnoreFile": true
     }
-  },
-  "assist": {
-    "actions": {
-      "source": {
-        "organizeImports": "on"
-      }
-    }
-  }
 }
